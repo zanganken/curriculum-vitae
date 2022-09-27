@@ -7,8 +7,8 @@ function App() {
 		<main className="p-5 text-primary">
 			<section id="cv">
 				<Header/>
-				<section id="content" className="pb-5">
-					<h1 className="text-xl my-8">
+				<section id="content" className="py-8">
+					<h1 className="text-xl mb-8">
 						<span className="underline underline-offset-4 font-bold">Développeur Web Backend/Frontend</span>
 						<small> (spécialisé javascript)</small>
 					</h1>

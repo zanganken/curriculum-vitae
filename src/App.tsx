@@ -104,7 +104,7 @@ function App() {
 							<section className="mt-3 flex gap-x-3 gap-y-2 flex-wrap md:flex-nowrap break-inside-avoid">
 								<header
 									className="font-bold bg-black/20 rounded-md px-3 py-2 uppercase self-start w-full md:w-fit print:p-0">
-									<h1 className="whitespace-nowrap">
+									<h1 className="md:whitespace-nowrap">
 										<time dateTime="2021">2021</time>
 										{ " " }
 										: Développeur Web et Web Mobile <small>- Bac+2</small>
@@ -118,7 +118,7 @@ function App() {
 							<section className="mt-3 flex gap-x-3 gap-y-2 flex-wrap md:flex-nowrap break-inside-avoid">
 								<header
 									className="font-bold bg-black/20 rounded-md px-3 py-2 uppercase self-start w-full md:w-fit print:p-0">
-									<h1 className="whitespace-nowrap">
+									<h1 className="md:whitespace-nowrap">
 										<time dateTime="2013">2013</time>
 										{ " " }
 										: BTS Services Informatiques aux Organisations <small>
@@ -131,7 +131,7 @@ function App() {
 							<section className="mt-3 flex gap-x-3 gap-y-2 flex-wrap md:flex-nowrap break-inside-avoid">
 								<header
 									className="font-bold bg-black/20 rounded-md px-3 py-2 uppercase self-start w-full md:w-fit print:p-0">
-									<h1 className="whitespace-nowrap">
+									<h1 className="md:whitespace-nowrap">
 										<time dateTime="2010">2010</time>
 										{ " " }
 										: Baccalauréat Scientifique Spécialité Mathématiques

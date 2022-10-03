@@ -43,7 +43,7 @@ function App() {
 							<section className="mt-3 flex gap-x-3 gap-y-2 flex-wrap md:flex-nowrap break-inside-avoid">
 								<header
 									className="font-bold bg-black/20 rounded-md px-3 py-2 uppercase self-start w-full md:w-fit print:p-0">
-									<div className="whitespace-nowrap">
+									<div className="md:whitespace-nowrap">
 										<time dateTime="2021-09">09/2021</time>
 										- <time dateTime="2021-09">10/2021</time> : MS Consulting
 									</div>
@@ -58,7 +58,7 @@ function App() {
 							<section className="mt-3 flex gap-x-3 gap-y-2 flex-wrap md:flex-nowrap break-inside-avoid">
 								<header
 									className="font-bold bg-black/20 rounded-md px-3 py-2 uppercase self-start w-full md:w-fit print:p-0">
-									<div className="whitespace-nowrap">
+									<div className="md:whitespace-nowrap">
 										<time dateTime="2016-08">08/2016</time>
 										- <time dateTime="2020-08">08/2020</time> : SAMSIC Flex Services
 									</div>
@@ -73,7 +73,7 @@ function App() {
 							<section className="mt-3 flex gap-x-3 gap-y-2 flex-wrap md:flex-nowrap break-inside-avoid">
 								<header
 									className="font-bold bg-black/20 rounded-md px-3 py-2 uppercase self-start w-full md:w-fit print:p-0">
-									<div className="whitespace-nowrap">
+									<div className="md:whitespace-nowrap">
 										<time dateTime="2014-07">07/2014</time>
 										- <time dateTime="2016-07">07/2016</time> : Orange SA
 									</div>
@@ -87,7 +87,7 @@ function App() {
 							<section className="mt-3 flex gap-x-3 gap-y-2 flex-wrap md:flex-nowrap break-inside-avoid">
 								<header
 									className="font-bold bg-black/20 rounded-md px-3 py-2 uppercase self-start w-full md:w-fit print:p-0">
-									<div className="whitespace-nowrap">
+									<div className="md:whitespace-nowrap">
 										<time dateTime="2012-08">08/2012</time>
 										- <time dateTime="2013-06">06/2013</time> : France Telecom
 									</div>

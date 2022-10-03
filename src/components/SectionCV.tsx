@@ -6,10 +6,11 @@ import { classNames } from "../utils/stringUtils"
 
 type TSectionCVProps = PropsWithChildren<{
 	title: string
+	icon?: JSX.Element
 	className?: string
 }>
 
-const SectionCV = ({ title, className, children }: TSectionCVProps) => {
+const SectionCV = ({ title, icon, className, children }: TSectionCVProps) => {
 	return (
 		<Disclosure defaultOpen={ true } as={ Fragment }>
 			{ ({ open }) => (
@@ -19,6 +20,8 @@ const SectionCV = ({ title, className, children }: TSectionCVProps) => {
 					!open ? "print:hidden" : "",
 				) }>
 					<Disclosure.Button className="font-bold text-xl" aria-label="Afficher/Cacher le contenu">
+						{ icon }
+						{ icon && " " }
 						<h1 className="inline underline underline-offset-4">{ title }</h1>
 						{ " " }
 						{ open ? (

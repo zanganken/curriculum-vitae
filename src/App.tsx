@@ -136,7 +136,7 @@ function App() {
 								</header>
 								<p className="indent-2 pt-2 print:p-0">
 									Formation à distance d'une durée de 6 mois à l'ENI École Informatique, conclus par un stage de 2
-									mois en entreprise chez <a href="#msConsulting" onClick={ e => handleHighlight(e, mscRef) }>MS
+									mois en entreprise chez <a href="#msc" onClick={ e => handleHighlight(e, mscRef) }>MS
 									Consulting</a>.
 								</p>
 							</section>
@@ -153,9 +153,10 @@ function App() {
 									</h1>
 								</header>
 								<p className="indent-2 pt-2 print:p-0">
-									2ème année passée en alternance à France Télécom en tant que
-									{ " " }
-									<a href="#tsp" onClick={ e => handleHighlight(e, tspRef) }>technicien de soutien de proximité</a>.
+									2ème année passée en alternance en tant que <a
+										href="#tsp"
+										onClick={ e => handleHighlight(e, tspRef) }
+									>technicien de soutien de proximité</a> à France Télécom.
 								</p>
 							</section>
 

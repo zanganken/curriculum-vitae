@@ -15,7 +15,8 @@ const Header = () => {
 			<ul className="ml-auto text-right min-w-fit">
 				<li>
 					<a href="mailto:ohersard@hotmail.fr">
-						ohersard@hotmail.fr <EnvelopeIcon/>
+						ohersard@hotmail.fr
+						<EnvelopeIcon className="ml-1"/>
 					</a>
 				</li>
 				<li>

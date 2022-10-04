@@ -50,10 +50,14 @@ html {
     @apply text-slate-700 dark:text-gray-200
 }
 
-.text-primary a:hover {
-    @apply text-black dark:text-white
+.text-primary a {
+    @apply underline hover:text-black dark:hover:text-white
 }
 
 .text-secondary {
     @apply text-slate-600 dark:text-gray-300
+}
+
+.hl {
+    @apply bg-white/20 rounded-md p-2 print:p-0
 }

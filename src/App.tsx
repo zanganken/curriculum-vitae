@@ -1,11 +1,23 @@
-import React from "react"
+import React, { RefObject, useRef, useState } from "react"
 import "./index.css"
 import Header from "./components/Header"
 import SectionCV from "./components/SectionCV"
 import { AcademicCapIcon, BriefcaseIcon, Cog8ToothIcon, UserCircleIcon } from "@heroicons/react/20/solid"
 import { LanguageIcon, StarIcon } from "@heroicons/react/24/solid"
+import { classNames } from "./utils/stringUtils"
 
 function App() {
+	const [highlight, setHighlight] = useState<string>()
+	const mscRef = useRef<HTMLElement>(null)
+	const tspRef = useRef<HTMLElement>(null)
+
+	const handleHighlight = (e: React.MouseEvent<HTMLAnchorElement>, ref: RefObject<HTMLElement>) => {
+		e.preventDefault()
+
+		setHighlight(ref.current?.id)
+		ref.current?.scrollIntoView({ behavior: "smooth" })
+	}
+
 	return (
 		<main className="p-5 text-primary">
 			<section id="cv">
@@ -40,7 +52,13 @@ function App() {
 						</div>
 
 						<SectionCV title="Expériences professionnelles" icon={ <BriefcaseIcon/> }>
-							<section className="mt-3 flex gap-x-3 gap-y-2 flex-wrap md:flex-nowrap break-inside-avoid">
+							<section
+								id="msc"
+								className={ classNames(
+									"mt-3 flex gap-x-3 gap-y-2 flex-wrap md:flex-nowrap break-inside-avoid",
+									highlight === "msc" ? "hl" : "",
+								) } ref={ mscRef }
+							>
 								<header
 									className="font-bold bg-black/20 rounded-md px-3 py-2 uppercase self-start w-full md:w-fit print:p-0">
 									<div className="md:whitespace-nowrap">
@@ -84,7 +102,13 @@ function App() {
 								</p>
 							</section>
 
-							<section className="mt-3 flex gap-x-3 gap-y-2 flex-wrap md:flex-nowrap break-inside-avoid">
+							<section
+								id="tsp"
+								className={ classNames(
+									"mt-3 flex gap-x-3 gap-y-2 flex-wrap md:flex-nowrap break-inside-avoid",
+									highlight === "tsp" ? "hl" : "",
+								) } ref={ tspRef }
+							>
 								<header
 									className="font-bold bg-black/20 rounded-md px-3 py-2 uppercase self-start w-full md:w-fit print:p-0">
 									<div className="md:whitespace-nowrap">
@@ -111,7 +135,9 @@ function App() {
 									</h1>
 								</header>
 								<p className="indent-2 pt-2 print:p-0">
-									Formation à distance d'une durée de 6 mois, conclus par un stage de 2 mois en entreprise.
+									Formation à distance d'une durée de 6 mois à l'ENI École Informatique, conclus par un stage de 2
+									mois en entreprise chez <a href="#msConsulting" onClick={ e => handleHighlight(e, mscRef) }>MS
+									Consulting</a>.
 								</p>
 							</section>
 
@@ -126,6 +152,11 @@ function App() {
 									</small>
 									</h1>
 								</header>
+								<p className="indent-2 pt-2 print:p-0">
+									2ème année passée en alternance à France Télécom en tant que
+									{ " " }
+									<a href="#tsp" onClick={ e => handleHighlight(e, tspRef) }>technicien de soutien de proximité</a>.
+								</p>
 							</section>
 
 							<section className="mt-3 flex gap-x-3 gap-y-2 flex-wrap md:flex-nowrap break-inside-avoid">

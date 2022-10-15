@@ -43,6 +43,7 @@ function App() {
 									<li>HTML5 / CSS3</li>
 									<li>Javascript / Typescript</li>
 									<li>React / Next.js</li>
+									<li>Zustand / Redux</li>
 									<li>TailwindCSS / HeadlessUI / Bootstrap</li>
 									<li>ORM Prisma (PostgreSQL, SQLite, etc...)</li>
 									<li>Création et consommation d'API avec tRPC</li>
